@@ -187,7 +187,7 @@ In what follows, let |request| be the {{PaymentRequest}} instance being construc
 
 1. Let |identifiers| be a list consisting of the first [=tuple/item=] of each pair in
    |request|.[=[[serializedMethodData]]=].
-1. Let |client| be the [=current settings object=].
+1. Let |client| be the [=current principal settings object=].
 1. [=Ingest payment method manifests=] given |identifiers| and |client|.
 
 These steps are what kicks off the whole process. The rest of [[#processing-model]] is concerned
